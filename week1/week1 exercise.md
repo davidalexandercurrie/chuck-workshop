@@ -33,7 +33,8 @@ while(true){
 3. Oscillators: SinOsc TriOsc SawOsc SqrOsc
 
 ```ChucK
-// Creates a Sine Wave Oscillator called s and 'chucks' it to the dac (digital analogue converter i.e. your computer's soundcard)
+// Creates a Sine Wave Oscillator called s and 'chucks' it to the dac
+// (digital analogue converter i.e. your computer's soundcard)
 SinOsc s => dac;
 ```
 
