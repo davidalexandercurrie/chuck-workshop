@@ -1,5 +1,3 @@
-# Don't spend more than 30 minutes on this...
-
 ## Create a 15-30 second piece of music using some or all of the following tools we went over last week:
 
 1. Print your name and the name of your piece.
