@@ -1,5 +1,5 @@
 // SAMPLING
-
+// IMPORTANT MAKE SURE YOUR CHUCK FILE IS SAVED IN WEEK2 FOLDER
 me.sourceDir() + "../DrumSamples/" => string folder;
 
 SndBuf kick => dac;
