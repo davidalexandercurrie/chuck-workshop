@@ -15,9 +15,9 @@ folder + "Snare01.wav" => snare.read;
 SndBuf hh => dac;
 folder + "ClosedHat01.wav" => hh.read;
 
-[1, 0 , 0, 1, 0 , 1 , 0 , 1, 0 , 1 , 0, 1 , 0 , 0 , 0, 1] @=> int kickPattern[];
-[1, 1 , 0, 1, 0 , 0 , 0 , 1, 0 , 0 , 0, 1 , 0 , 1 , 0, 0] @=> int snarePattern[];
-[1, 0 , 0, 1, 0 , 1 , 0 , 1, 0 , 0 , 0, 1 , 0 , 0 , 0, 0] @=> int hhPattern[];
+[1, 0 , 0, 1, 0 , 1 , 0 , 1, 0 , 1 , 0, 1 , 0 , 0 , 0, 0] @=> int kickPattern[];
+[1, 1 , 0, 1, 0 , 0 , 0 , 1, 0 , 0 , 0, 1 , 0 , 1 , 0, 1] @=> int snarePattern[];
+[1, 0 , 0, 1, 0 , 1 , 0 , 1, 0 , 0 , 0, 1 , 0 , 0 , 0, 1] @=> int hhPattern[];
 
 0 => kick.rate;
 0 => snare.rate;

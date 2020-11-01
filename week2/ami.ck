@@ -16,8 +16,8 @@ SndBuf hh => dac;
 folder + "ClosedHat01.wav" => hh.read;
 
 [1, 0 , 0, 1, 0 , 1 , 0 , 1, 0 , 1 , 0, 1 , 0 , 0 , 0, 1] @=> int kickPattern[];
-[1, 1 , 0, 1, 0 , 0 , 0 , 1, 0 , 0 , 0, 1 , 0 , 1 , 0, 0] @=> int snarePattern[];
-[1, 0 , 0, 1, 0 , 1 , 0 , 1, 0 , 0 , 0, 1 , 0 , 0 , 0, 0] @=> int hhPattern[];
+[1, 1 , 0, 1, 0 , 0 , 0 , 1, 0 , 0 , 0, 1 , 0 , 1 , 0, 1] @=> int snarePattern[];
+[1, 0 , 0, 1, 0 , 1 , 0 , 1, 0 , 0 , 0, 1 , 0 , 0 , 0, 1] @=> int hhPattern[];
 
 0 => kick.rate;
 0 => snare.rate;
@@ -43,9 +43,10 @@ while(true){
         0 => hh.pos;
     }
     
-    
-    100::ms => now;   
-    step++; 
+    //100 milliseconds per beat
+    100::ms => now;
+    step++;
+    //Math.random2 randomizes
     if(Math.random2(0,8) == 0){
         step + 5 => step;
     }
